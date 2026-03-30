@@ -581,3 +581,8 @@ async def ejecutar_cotizacion(input: CotizacionInput):
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run(app, host="0.0.0.0", port=8000)
+
+
+@app.get("/")
+def inicio():
+    return {"mensaje": "API funcionando 🚀"}
